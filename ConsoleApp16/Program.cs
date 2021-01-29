@@ -34,12 +34,31 @@ namespace ConsoleApp16
 
         static void Main(string[] args)
         {
-        IRunnable withX = new WithX();
-        if (withX is IRunnable)
-        {
-            withX.Run();
-        }
-        ReadKey();
+         do {
+            string cmd;
+            WriteLine("Menu:");
+            WriteLine("1. Вывести '1'");
+            WriteLine("2. Вывести 'Привет'");
+            WriteLine("3. Выход");
+            Write("Введите номер действия: ");
+            cmd = ReadLine();
+            if (cmd == "1")
+            {
+                WriteLine("1");
+            } else if (cmd == "2")
+            {
+                WriteLine("Привет");
+            }
+            else if (cmd == "3")
+            {
+                break;
+            }
+            else
+            {
+                WriteLine("Ошибка ввода. Попробуйте еще раз.");
+            }
+         }  while (true) ;
+                ReadKey();
         }
     }
 }
