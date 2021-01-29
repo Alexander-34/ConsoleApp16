@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\Output1Command.cs" />
+    <Compile Include="Command\InputErrorCommand.cs" />
+    <Compile Include="Command\OutputHiCommand.cs" />
+    <Compile Include="Command\ExitComand.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\IPrintable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
